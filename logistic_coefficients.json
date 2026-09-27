@@ -1,0 +1,60 @@
+{
+  "intercept": -0.824424,
+  "terms": [
+    {
+      "feature": "person_age",
+      "label": "Umur",
+      "coefficient": 0.011479,
+      "direction": "increases risk"
+    },
+    {
+      "feature": "person_income",
+      "label": "Pendapatan",
+      "coefficient": -0.319808,
+      "direction": "decreases risk"
+    },
+    {
+      "feature": "person_emp_length",
+      "label": "Lama Bekerja",
+      "coefficient": -0.059377,
+      "direction": "decreases risk"
+    },
+    {
+      "feature": "loan_percent_income",
+      "label": "Rasio Cicilan (DTI)",
+      "coefficient": 0.779654,
+      "direction": "increases risk"
+    },
+    {
+      "feature": "cb_person_cred_hist_length",
+      "label": "Lama Riwayat Kredit",
+      "coefficient": 0.002723,
+      "direction": "increases risk"
+    },
+    {
+      "feature": "person_home_ownership_OTHER",
+      "label": "Rumah: Lainnya",
+      "coefficient": 0.564662,
+      "direction": "increases risk"
+    },
+    {
+      "feature": "person_home_ownership_OWN",
+      "label": "Rumah: Milik Sendiri",
+      "coefficient": -1.381848,
+      "direction": "decreases risk"
+    },
+    {
+      "feature": "person_home_ownership_RENT",
+      "label": "Rumah: Sewa",
+      "coefficient": 0.699264,
+      "direction": "increases risk"
+    },
+    {
+      "feature": "cb_person_default_on_file_Y",
+      "label": "Pernah Gagal Bayar",
+      "coefficient": 1.171309,
+      "direction": "increases risk"
+    }
+  ],
+  "note": "PD = 1 / (1 + e^-z),  z = intercept + sum(coef * standardized_feature)"
+}
